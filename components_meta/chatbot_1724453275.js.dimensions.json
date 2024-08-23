@@ -1,0 +1,18 @@
+{
+    "id": "chatbot-c23c6cc7-7336-949f-8270-befd41cac764",
+    "name": "chatbot",
+    "type": "containerComponent",
+    "metadata": {},
+    "w": 7,
+    "h": 7,
+    "x": "50",
+    "y": "50",
+    "i": "__dropping-elem__",
+    "minW": 3,
+    "maxW": 12,
+    "minH": 1,
+    "moved": false,
+    "static": false,
+    "isDraggable": true,
+    "isResizable": true
+}
