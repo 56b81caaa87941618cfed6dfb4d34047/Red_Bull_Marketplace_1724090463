@@ -1,0 +1,18 @@
+{
+    "id": "table_with_title_add_button_and_edit_delete_options-7fe45dad-8e23-3702-3578-3d1a2d748ca7",
+    "name": "table_with_title_add_button_and_edit_delete_options",
+    "type": "containerComponent",
+    "metadata": {},
+    "w": 8,
+    "h": 5,
+    "x": "60",
+    "y": "40",
+    "i": "__dropping-elem__",
+    "minW": 3,
+    "maxW": 12,
+    "minH": 1,
+    "moved": false,
+    "static": false,
+    "isDraggable": true,
+    "isResizable": true
+}
