@@ -6,26 +6,26 @@
 -->
 
 <template>
-  <div class="max-w-screen-xl mx-auto px-4 md:px-8">
+  <div class="max-w-screen-xl mx-auto px-4 md:px-8 bg-pink-300 bg-opacity-20 rounded-lg backdrop-filter backdrop-blur-lg shadow-lg p-6">
     <div class="items-start justify-between md:flex">
       <div class="max-w-lg">
-        <h3 class="text-white-800 text-xl font-bold sm:text-2xl">
+        <h3 class="text-magenta-500 text-xl font-bold sm:text-2xl">
           TABLE_TITLE_PLACEHOLDER_TEXT
         </h3>
       </div>
     </div>
-    <div v-if="tableHeaders.length === 0">
+    <div v-if="tableHeaders.length === 0" class="text-pink-200">
       Executing a SQL query to populate data into this table...
     </div>
-    <div class="items-start justify-between md:flex mt-12 shadow-sm border rounded-lg overflow-x-auto">
-      <table class="w-full table-auto text-sm text-left" style="background-color: white;">
-        <thead class="bg-gray-50 text-gray-600 font-medium border-b">
+    <div class="items-start justify-between md:flex mt-12 shadow-lg rounded-lg overflow-x-auto bg-pink-100 bg-opacity-10 backdrop-filter backdrop-blur-md">
+      <table class="w-full table-auto text-sm text-left">
+        <thead class="bg-magenta-200 bg-opacity-30 text-pink-800 font-medium border-b border-pink-300">
           <tr>
-            <th v-for="header in tableHeaders" :key="header" class="py-3 px-6" v-html="header"></th>
+            <th v-for="header in tableHeaders" :key="header" class="py-3 px-6 hover:bg-pink-300 hover:bg-opacity-40 transition-colors duration-300" v-html="header"></th>
           </tr>
         </thead>
-        <tbody class="text-gray-600 divide-y">
-          <tr v-for="(item, idx) in tableItems" :key="idx">
+        <tbody class="text-pink-100 divide-y divide-pink-300">
+          <tr v-for="(item, idx) in tableItems" :key="idx" class="hover:bg-pink-300 hover:bg-opacity-20 transition-colors duration-300">
             <td
               v-for="(value, key) in item"
               :key="key"
@@ -39,6 +39,7 @@
       </table>
     </div>
   </div>
+`
 </template>
 
 <script>
