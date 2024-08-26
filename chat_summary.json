@@ -36,5 +36,11 @@
         "content": "Sure, I'll add an email form to Santa.",
         "timestamp": "26082024163657",
         "message_id": "guest26082024163656"
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where exactly within the app do you wish to incorporate the email form to Santa?\", \"option1\": \"On the main page as a direct widget\", \"option2\": \"Inside a specific section, accessible through a menu\"}, {\"question 2\": \"Should the email form include additional fields apart from the text area for the message, such as the user's name, age, or a dropdown for gift preferences?\", \"option1\": \"Yes, include additional fields for more personalized messages\", \"option2\": \"No, keep it simple with just a message box\"}], \"input_token_count\": 270, \"output_token_count\": 128, \"time_taken\": \"0:00:03.421969\"}",
+        "timestamp": "26082024163701",
+        "message_id": "guest26082024163656"
     }
 ]
