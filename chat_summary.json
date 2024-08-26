@@ -12,5 +12,11 @@
         "content": "Add a button that says hadoken",
         "timestamp": "26082024163559",
         "message_id": "guest26082024163558"
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like this 'Hadoken' button to be positioned on your application's interface?\", \"option1\": \"On the home page, prominently near the top\", \"option2\": \"In the footer section of every page for easy access\"}, {\"question 2\": \"What action do you want to occur when a user clicks the 'Hadoken' button?\", \"option1\": \"Direct users to a new page showcasing exclusive products\", \"option2\": \"Display a pop-up with a promotional message or offer\"}], \"input_token_count\": 271, \"output_token_count\": 119, \"time_taken\": \"0:00:02.979835\"}",
+        "timestamp": "26082024163603",
+        "message_id": "guest26082024163558"
     }
 ]
