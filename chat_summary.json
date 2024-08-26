@@ -42,5 +42,11 @@
         "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where exactly within the app do you wish to incorporate the email form to Santa?\", \"option1\": \"On the main page as a direct widget\", \"option2\": \"Inside a specific section, accessible through a menu\"}, {\"question 2\": \"Should the email form include additional fields apart from the text area for the message, such as the user's name, age, or a dropdown for gift preferences?\", \"option1\": \"Yes, include additional fields for more personalized messages\", \"option2\": \"No, keep it simple with just a message box\"}], \"input_token_count\": 270, \"output_token_count\": 128, \"time_taken\": \"0:00:03.421969\"}",
         "timestamp": "26082024163701",
         "message_id": "guest26082024163656"
+    },
+    {
+        "role": "chat_ui_checklist",
+        "content": "{\"status\": \"success\", \"ui_elements_checklist\": [{\"feature\": \"Add validation to the email form to ensure correct email format\", \"checked\": true}, {\"feature\": \"Include a CAPTCHA to prevent spam submissions\", \"checked\": false}, {\"feature\": \"Add a confirmation message or page after successful submission\", \"checked\": true}, {\"feature\": \"Implement an auto-response email feature to acknowledge the receipt of the message\", \"checked\": false}, {\"feature\": \"Provide a 'subscribe to newsletter' checkbox within the email form\", \"checked\": true}, {\"feature\": \"Include a drop-down menu in the form for users to select the subject of their email\", \"checked\": false}], \"input_token_count\": 224, \"output_token_count\": 143, \"time_taken\": \"0:00:03.837117\"}",
+        "timestamp": "26082024163702",
+        "message_id": "guest26082024163656"
     }
 ]
