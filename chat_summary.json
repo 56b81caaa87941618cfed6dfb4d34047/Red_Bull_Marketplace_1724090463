@@ -54,5 +54,11 @@
         "content": "Add a form that sends an email to santa",
         "timestamp": "26082024163830",
         "message_id": "guest26082024163829"
+    },
+    {
+        "role": "chat_qna",
+        "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the email form to Santa to be positioned on the page?\", \"option1\": \"Below the 'hadoken' button\", \"option2\": \"At the bottom of the page\"}, {\"question 2\": \"Should the form include any specific fields besides the standard name and email address?\", \"option1\": \"Yes, add a field for the user's wish list\", \"option2\": \"No, just the standard fields\"}], \"input_token_count\": 317, \"output_token_count\": 105, \"time_taken\": \"0:00:02.779338\"}",
+        "timestamp": "26082024163834",
+        "message_id": "guest26082024163829"
     }
 ]
