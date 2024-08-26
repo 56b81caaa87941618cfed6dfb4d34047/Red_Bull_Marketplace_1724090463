@@ -1,5 +1,14 @@
 [
     {
+        "role": "chat_ui_checklist",
+        "content": "{\"status\": \"success\", \"ui_elements_checklist\": [{\"feature\": \"Add a 'Submit' button with festive animations for the email form\", \"checked\": true}, {\"feature\": \"Include a live chat feature for instant enquiries about products and Santa's whereabouts\", \"checked\": false}, {\"feature\": \"Implement an 'Email Sent Confirmation' page with options to return to the marketplace or send another email\", \"checked\": true}, {\"feature\": \"Integrate a 'Letter to Santa' template within the email form for kids\", \"checked\": false}, {\"feature\": \"Add a countdown timer to Christmas on the marketplace homepage\", \"checked\": true}, {\"feature\": \"Implement a 'Track Your Email to Santa' feature using a unique tracking ID for each email sent\", \"checked\": false}], \"input_token_count\": 271, \"output_token_count\": 163, \"time_taken\": \"0:00:04.104233\"}",
+        "message_id": "guest26082024163829",
+        "timestamp": "26082024163835",
+        "component_file_name": "table_with_title_add_button_and_edit_delete_options_1724500687",
+        "div_id": "",
+        "div_action": ""
+    },
+    {
         "role": "chat_qna",
         "content": "{\"status\": \"success\", \"qna\": [{\"question 1\": \"Where would you like the email form to Santa to be positioned on the page?\", \"option1\": \"Below the 'hadoken' button\", \"option2\": \"At the bottom of the page\"}, {\"question 2\": \"Should the form include any specific fields besides the standard name and email address?\", \"option1\": \"Yes, add a field for the user's wish list\", \"option2\": \"No, just the standard fields\"}], \"input_token_count\": 317, \"output_token_count\": 105, \"time_taken\": \"0:00:02.779338\"}",
         "message_id": "guest26082024163829",
