@@ -19,6 +19,26 @@
         </button>
       </div>
     </div>
+    <div class="mt-8 bg-pink-100 bg-opacity-20 rounded-lg p-6 shadow-lg">
+      <h4 class="text-xl font-semibold text-magenta-500 mb-4">Email Santa</h4>
+      <form @submit.prevent="sendEmailToSanta" class="space-y-4">
+        <div>
+          <label for="name" class="block text-pink-200 mb-2">Your Name:</label>
+          <input type="text" id="name" v-model="santaEmail.name" required class="w-full px-4 py-2 rounded-lg bg-pink-300 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-magenta-500">
+        </div>
+        <div>
+          <label for="email" class="block text-pink-200 mb-2">Your Email:</label>
+          <input type="email" id="email" v-model="santaEmail.email" required class="w-full px-4 py-2 rounded-lg bg-pink-300 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-magenta-500">
+        </div>
+        <div>
+          <label for="message" class="block text-pink-200 mb-2">Message to Santa:</label>
+          <textarea id="message" v-model="santaEmail.message" required rows="4" class="w-full px-4 py-2 rounded-lg bg-pink-300 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-magenta-500"></textarea>
+        </div>
+        <button type="submit" class="px-6 py-2 bg-magenta-500 text-white rounded-lg hover:bg-magenta-600 transition-colors duration-300">Send to Santa</button>
+      </form>
+    </div>
+    <div class="items-start justify-between md:flex mt-12 shadow-lg rounded-lg overflow-x-auto bg-pink-100 bg-opacity-10 backdrop-filter backdrop-blur-md">
+    </div>
     <div v-if="tableHeaders.length === 0" class="text-pink-200">
       Executing a SQL query to populate data into this table...
     </div>
@@ -56,6 +76,11 @@ export default {
       tableItems: [],
       tableHeaders: [],
       SQL_statement: "PLACEHOLDER_SQL_STATEMENT",
+      santaEmail: {
+        name: '',
+        email: '',
+        message: ''
+      }
     };
   },
   methods: {
@@ -71,6 +96,17 @@ export default {
           }
         });
     },
+    sendEmailToSanta() {
+      // Here you would typically send the email using an API
+      console.log('Sending email to Santa:', this.santaEmail);
+      // Reset the form after sending
+      this.santaEmail = {
+        name: '',
+        email: '',
+        message: ''
+      };
+      alert('Your message has been sent to Santa!');
+    }
   },
   mounted() {
     this.fetch_data_from_database(this.SQL_statement).then(([tableHeaders, tableItems]) => {
