@@ -43,6 +43,28 @@
         </tbody>
       </table>
     </div>
+    <div class="mt-8 p-6 bg-red-100 bg-opacity-20 rounded-lg shadow-lg">
+      <h4 class="text-xl font-bold text-red-600 mb-4">Email Santa</h4>
+      <form @submit.prevent="sendEmail" class="space-y-4">
+        <div>
+          <label for="name" class="block text-sm font-medium text-red-700">Name</label>
+          <input type="text" id="name" v-model="name" required class="mt-1 block w-full rounded-md border-red-300 shadow-sm focus:border-red-500 focus:ring focus:ring-red-200 focus:ring-opacity-50">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-red-700">Email</label>
+          <input type="email" id="email" v-model="email" required class="mt-1 block w-full rounded-md border-red-300 shadow-sm focus:border-red-500 focus:ring focus:ring-red-200 focus:ring-opacity-50">
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-red-700">Message</label>
+          <textarea id="message" v-model="message" rows="4" required class="mt-1 block w-full rounded-md border-red-300 shadow-sm focus:border-red-500 focus:ring focus:ring-red-200 focus:ring-opacity-50"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+            Send to Santa
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -56,6 +78,9 @@ export default {
       tableItems: [],
       tableHeaders: [],
       SQL_statement: "PLACEHOLDER_SQL_STATEMENT",
+      name: "",
+      email: "",
+      message: ""
     };
   },
   methods: {
@@ -71,6 +96,20 @@ export default {
           }
         });
     },
+    sendEmail() {
+      // Here you would typically send the email using an API
+      console.log("Sending email to Santa:", {
+        name: this.name,
+        email: this.email,
+        message: this.message
+      });
+      // Reset form after sending
+      this.name = "";
+      this.email = "";
+      this.message = "";
+      alert("Your message has been sent to Santa!");
+    }
+  },
   },
   mounted() {
     this.fetch_data_from_database(this.SQL_statement).then(([tableHeaders, tableItems]) => {
