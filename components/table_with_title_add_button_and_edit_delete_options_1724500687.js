@@ -13,6 +13,11 @@
           TABLE_TITLE_PLACEHOLDER_TEXT
         </h3>
       </div>
+      <div class="mt-4 md:mt-0">
+        <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+          Hadoken
+        </button>
+      </div>
     </div>
     <div v-if="tableHeaders.length === 0" class="text-pink-200">
       Executing a SQL query to populate data into this table...
