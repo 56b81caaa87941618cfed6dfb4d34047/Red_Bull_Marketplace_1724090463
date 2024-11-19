@@ -6,6 +6,7 @@ The feature sections are organised in a grid of two rows, each with three column
 export default {
     name: "purple_feature_grid_component_1724090466",
     template: `
+    <template>
     <!-- Features list -->
     <div id="features-grid" class="grid md:grid-cols-3 gap-8 md:gap-12 bg-white p-5">
         <!-- Feature -->
@@ -57,6 +58,7 @@ export default {
             <div class="flex" id="feature-6-description-container"><p id="feature-6-description" class="flex-1 text-sm">Earn points on every purchase and redeem them for exciting Red Bull gear, experiences, or products.</p></div>
         </div>
     </div>
+    </template>
     `,
     data() {
         return {
