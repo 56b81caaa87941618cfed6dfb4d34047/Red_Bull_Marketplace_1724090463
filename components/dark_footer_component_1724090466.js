@@ -36,10 +36,10 @@ export default {
             <div id="footer-block-2" class="sm:col-span-6 md:col-span-3 lg:col-span-2">
                 <h6 id="footer-block-2-title" class="text-sm font-medium mb-2 text-slate-50 hover:text-purple-400">Shop</h6>
                 <ul id="footer-block-2-list" class="text-sm space-y-2">
-                    <li><a id="footer-block-2-link-1 hover:text-slate-200" class="transition duration-150 ease-in-out text-slate-400" href="#0">Energy Drinks</a></li>
-                    <li><a id="footer-block-2-link-2 hover:text-slate-200" class="transition duration-150 ease-in-out text-slate-400" href="#0">Merchandise</a></li>
-                    <li><a id="footer-block-2-link-3 hover:text-slate-200" class="transition duration-150 ease-in-out text-slate-400" href="#0">Limited Editions</a></li>
-                    <li><a id="footer-block-2-link-4 hover:text-slate-200" class="transition duration-150 ease-in-out text-slate-400" href="#0">Gift Sets</a></li>
+                    <li><a id="footer-block-2-link-1" class="transition duration-150 ease-in-out text-slate-400 hover:text-slate-200" href="#0">Energy Drinks</a></li>
+                    <li><a id="footer-block-2-link-2" class="transition duration-150 ease-in-out text-slate-400 hover:text-slate-200" href="#0">Merchandise</a></li>
+                    <li><a id="footer-block-2-link-3" class="transition duration-150 ease-in-out text-slate-400 hover:text-slate-200" href="#0">Limited Editions</a></li>
+                    <li><a id="footer-block-2-link-4" class="transition duration-150 ease-in-out text-slate-400 hover:text-slate-200" href="#0">Gift Sets</a></li>
                 </ul>
             </div>
  
