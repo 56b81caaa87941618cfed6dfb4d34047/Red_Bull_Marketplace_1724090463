@@ -7,6 +7,7 @@
 */
 
 export default {
+    name: 'DarkFooterComponent',
     template: `
 <footer id="footer-section-container">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
