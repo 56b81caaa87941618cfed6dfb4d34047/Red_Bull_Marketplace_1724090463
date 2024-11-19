@@ -6,51 +6,51 @@
 -->
 
 <template>
-  <div class="max-w-screen-xl mx-auto px-4 md:px-8 bg-pink-300 bg-opacity-20 rounded-lg backdrop-filter backdrop-blur-lg shadow-lg p-6">
+  <div class="max-w-screen-xl mx-auto px-4 md:px-8 bg-magenta-500 bg-opacity-20 rounded-lg backdrop-filter backdrop-blur-lg shadow-lg p-6">
     <div class="items-start justify-between md:flex">
       <div class="max-w-lg">
-        <h3 class="text-magenta-500 text-xl font-bold sm:text-2xl">
+        <h3 class="text-pink-200 text-xl font-bold sm:text-2xl">
           TABLE_TITLE_PLACEHOLDER_TEXT
         </h3>
       </div>
       <div class="mt-4 md:mt-0">
-        <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+        <button class="px-4 py-2 text-pink-200 bg-magenta-600 bg-opacity-50 rounded-lg hover:bg-magenta-500 hover:bg-opacity-70 transition-colors duration-300 backdrop-filter backdrop-blur-sm shadow-lg">
           Hadoken
         </button>
       </div>
     </div>
-    <div class="mt-8 bg-pink-100 bg-opacity-20 rounded-lg p-6 shadow-lg">
-      <h4 class="text-xl font-semibold text-magenta-500 mb-4">Email Santa</h4>
+    <div class="mt-8 bg-pink-400 bg-opacity-20 rounded-lg p-6 shadow-lg backdrop-filter backdrop-blur-md">
+      <h4 class="text-xl font-semibold text-pink-200 mb-4">Email Santa</h4>
       <form @submit.prevent="sendEmailToSanta" class="space-y-4">
         <div>
-          <label for="name" class="block text-pink-200 mb-2">Your Name:</label>
-          <input type="text" id="name" v-model="santaEmail.name" required class="w-full px-4 py-2 rounded-lg bg-pink-300 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-magenta-500">
+          <label for="name" class="block text-pink-100 mb-2">Your Name:</label>
+          <input type="text" id="name" v-model="santaEmail.name" required class="w-full px-4 py-2 rounded-lg bg-magenta-500 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 placeholder-pink-300">
         </div>
         <div>
-          <label for="email" class="block text-pink-200 mb-2">Your Email:</label>
-          <input type="email" id="email" v-model="santaEmail.email" required class="w-full px-4 py-2 rounded-lg bg-pink-300 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-magenta-500">
+          <label for="email" class="block text-pink-100 mb-2">Your Email:</label>
+          <input type="email" id="email" v-model="santaEmail.email" required class="w-full px-4 py-2 rounded-lg bg-magenta-500 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 placeholder-pink-300">
         </div>
         <div>
-          <label for="message" class="block text-pink-200 mb-2">Message to Santa:</label>
-          <textarea id="message" v-model="santaEmail.message" required rows="4" class="w-full px-4 py-2 rounded-lg bg-pink-300 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-magenta-500"></textarea>
+          <label for="message" class="block text-pink-100 mb-2">Message to Santa:</label>
+          <textarea id="message" v-model="santaEmail.message" required rows="4" class="w-full px-4 py-2 rounded-lg bg-magenta-500 bg-opacity-20 text-pink-100 focus:outline-none focus:ring-2 focus:ring-pink-300 placeholder-pink-300"></textarea>
         </div>
-        <button type="submit" class="px-6 py-2 bg-magenta-500 text-white rounded-lg hover:bg-magenta-600 transition-colors duration-300">Send to Santa</button>
+        <button type="submit" class="px-6 py-2 bg-pink-500 bg-opacity-70 text-white rounded-lg hover:bg-pink-400 hover:bg-opacity-80 transition-colors duration-300 shadow-lg backdrop-filter backdrop-blur-sm">Send to Santa</button>
       </form>
     </div>
-    <div class="items-start justify-between md:flex mt-12 shadow-lg rounded-lg overflow-x-auto bg-pink-100 bg-opacity-10 backdrop-filter backdrop-blur-md">
+    <div class="items-start justify-between md:flex mt-12 shadow-lg rounded-lg overflow-x-auto bg-magenta-400 bg-opacity-10 backdrop-filter backdrop-blur-md">
     </div>
-    <div v-if="tableHeaders.length === 0" class="text-pink-200">
+    <div v-if="tableHeaders.length === 0" class="text-pink-100">
       Executing a SQL query to populate data into this table...
     </div>
-    <div class="items-start justify-between md:flex mt-12 shadow-lg rounded-lg overflow-x-auto bg-pink-100 bg-opacity-10 backdrop-filter backdrop-blur-md">
+    <div class="items-start justify-between md:flex mt-12 shadow-lg rounded-lg overflow-x-auto bg-magenta-400 bg-opacity-10 backdrop-filter backdrop-blur-md">
       <table class="w-full table-auto text-sm text-left">
-        <thead class="bg-magenta-200 bg-opacity-30 text-pink-800 font-medium border-b border-pink-300">
+        <thead class="bg-magenta-500 bg-opacity-30 text-pink-100 font-medium border-b border-pink-300">
           <tr>
-            <th v-for="header in tableHeaders" :key="header" class="py-3 px-6 hover:bg-pink-300 hover:bg-opacity-40 transition-colors duration-300" v-html="header"></th>
+            <th v-for="header in tableHeaders" :key="header" class="py-3 px-6 hover:bg-magenta-400 hover:bg-opacity-40 transition-colors duration-300" v-html="header"></th>
           </tr>
         </thead>
-        <tbody class="text-pink-100 divide-y divide-pink-300">
-          <tr v-for="(item, idx) in tableItems" :key="idx" class="hover:bg-pink-300 hover:bg-opacity-20 transition-colors duration-300">
+        <tbody class="text-pink-200 divide-y divide-pink-300">
+          <tr v-for="(item, idx) in tableItems" :key="idx" class="hover:bg-magenta-400 hover:bg-opacity-20 transition-colors duration-300">
             <td
               v-for="(value, key) in item"
               :key="key"
