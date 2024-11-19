@@ -4,7 +4,10 @@
 /* Summary: This is a canvas element for displaying a purple glow and a particle animation in the background of the hero component.
 */
 
-export default {
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+    name: 'ParticleComponent',
     template: `
     <div>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -63,4 +66,4 @@ export default {
             tab: null
         };
     }
-};
+});
