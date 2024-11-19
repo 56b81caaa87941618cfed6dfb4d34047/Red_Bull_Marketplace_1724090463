@@ -3,7 +3,7 @@
 // 2. In the html file's <head> section, import the JS file for this component `./components/echarts-pie-chart.js`. You are strictly required to **NOT** remove anything else. Keep blank lines before and after this code. Do not remove the other component imports!
 // 3. You are given the correct SQL statement -- replace the `PLACEHOLDER_SQL_STATEMENT` variable in this file with the actual SQL statement.
 
-Vue.component('echarts_pie_chart_1724453246', {
+Vue.component('echarts-pie-chart-1724453246', {
     template: `
         <div style="display: flex; justify-content: center;">
             <div id="pie-chart" style="width: 100vw; height: 50vh;"></div>
