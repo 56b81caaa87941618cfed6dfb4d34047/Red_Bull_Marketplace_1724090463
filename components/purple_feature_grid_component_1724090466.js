@@ -56,7 +56,8 @@ export default {
             </div>
             <div class="flex" id="feature-6-description-container"><p id="feature-6-description" class="flex-1 text-sm">Earn points on every purchase and redeem them for exciting Red Bull gear, experiences, or products.</p></div>
         </div>
-    </div>`,
+    </div>
+    `,
     data() {
         return {
             expanded: false, 
