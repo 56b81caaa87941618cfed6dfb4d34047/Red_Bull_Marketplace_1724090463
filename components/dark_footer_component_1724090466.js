@@ -9,7 +9,6 @@
 export default {
     name: 'DarkFooterComponent',
     template: `
-        <template>
         <footer id="footer-section-container">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
                 <!-- Blocks -->
@@ -68,7 +67,6 @@ export default {
                 </div>
             </div>
         </footer>
-        </template>
     `,
     data() {
         return {
