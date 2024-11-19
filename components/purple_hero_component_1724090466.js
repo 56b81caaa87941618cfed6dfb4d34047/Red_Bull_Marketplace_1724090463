@@ -4,7 +4,7 @@
 3. Hero content: The main content of the landing page, including an announcement text, a hero text, a sub-hero text, and two buttons. The hero content is centered.
 */
 
-Vue.component("purple_hero_component_1724090466", {
+Vue.component("purple_hero_component_1724090466", Vue.extend({
     template: `
     <section id="hero-section-container">
     <div id="section-container" class="relative max-w-6xl mx-auto px-4 sm:px-6 bg-white">
