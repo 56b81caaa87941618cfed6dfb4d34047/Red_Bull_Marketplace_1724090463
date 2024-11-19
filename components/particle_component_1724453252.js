@@ -53,7 +53,8 @@ export default {
                 </g>
             </svg>
         </div>
-    </div>`,
+    </div>
+    `,
     data() {
         return {
             expanded: false,
