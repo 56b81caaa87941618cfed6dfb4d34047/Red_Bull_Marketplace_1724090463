@@ -6,7 +6,7 @@
 5. The fifth column covers legal information such as the refund policy, terms and conditions, privacy policy, and brand kit.
 */
 
-Vue.component("dark_footer_component_1724090466", {
+export default {
     template: `
 <footer id="footer-section-container">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
@@ -73,4 +73,4 @@ Vue.component("dark_footer_component_1724090466", {
             tab: null,
         };
     },
-});
+};
