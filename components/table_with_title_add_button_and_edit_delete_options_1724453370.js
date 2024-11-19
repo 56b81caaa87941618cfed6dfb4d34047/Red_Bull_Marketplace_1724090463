@@ -39,8 +39,10 @@ Vue.component('table_with_title_add_button_and_edit_delete_options_1724453370', 
                         const tableHeaders = Object.keys(tableItems[0])
                         this.tableItems = tableItems;
                         this.tableHeaders = tableHeaders;
-                        return [tableHeaders, tableItems]}})
-        },
+                        return [tableHeaders, tableItems]
+                    }
+                });
+      },
     // end fetch_data_from_database() method
   },
   mounted() {
