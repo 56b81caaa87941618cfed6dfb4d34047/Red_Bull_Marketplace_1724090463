@@ -32,5 +32,5 @@ export default {
             tab: null,
         };
     },
-}
+};
 </script>
