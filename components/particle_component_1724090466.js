@@ -1,10 +1,8 @@
 /* Summary: This is a canvas element for displaying a purple glow and a particle animation in the background of the hero component.
 */
 
-/* Summary: This is a canvas element for displaying a purple glow and a particle animation in the background of the hero component.
-*/
-
-Vue.component("particle_component_1724090466", {
+export default {
+    name: "ParticleComponent",
     template: `
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <div id="illustration"
@@ -60,4 +58,4 @@ Vue.component("particle_component_1724090466", {
             tab: null
         };
     },
-});
+};
