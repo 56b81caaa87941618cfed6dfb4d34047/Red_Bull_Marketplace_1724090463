@@ -1,13 +1,17 @@
-/* Summary: Describes a footer section of a website. The footer contains the following sections, each of which is a column:
-1. The first column includes the company logo, copyright notice, and social media links.
-2. The second column lists the products and services offered by the company.
-3. The third column provides information about the company, including a blog, careers, and financial statements.
-4. The fourth column contains resources for the community, terms of service, and a vulnerability reporting page.
-5. The fifth column covers legal information such as the refund policy, terms and conditions, privacy policy, and brand kit.
-*/
+<script>
+import { ref } from 'vue'
 
 export default {
     name: 'DarkFooterComponent',
+    setup() {
+        const expanded = ref(false)
+        const tab = ref(null)
+
+        return {
+            expanded,
+            tab
+        }
+    },
     template: `
         <footer id="footer-section-container">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 bg-white">
@@ -67,11 +71,6 @@ export default {
                 </div>
             </div>
         </footer>
-    `,
-    data() {
-        return {
-            expanded: false,
-            tab: null,
-        };
-    },
-};
+    `
+}
+</script>
